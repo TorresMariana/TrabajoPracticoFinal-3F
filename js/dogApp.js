@@ -110,6 +110,9 @@ fetch('js/nombres.json')
 document.getElementById('cerrarPopup').addEventListener('click',() =>{
     document.getElementById('overlay').style.display = 'none';
 })
+document.getElementById('overlay').addEventListener('click',() =>{
+    document.getElementById('overlay').style.display = 'none';
+})
 
 
 
