@@ -37,7 +37,7 @@ fetch('https://dog.ceo/api/breeds/list/all')
                 //actualizar las variables
                 document.getElementById(`cardImagen${index+1}`).src = imagenPerro.imagen;
                 // document.getElementById(`cardRaza${index+1}`).innerHTML = imagenPerro.raza;
-                console.log(`ID: ${index}, Raza: ${imagenPerro.raza}, Imagen: ${imagenPerro.imagen}`);
+                // console.log(`ID: ${index}, Raza: ${imagenPerro.raza}, Imagen: ${imagenPerro.imagen}`);
                 
                 //BOTON ADOPTAR
                 document.getElementById(`cardBoton${index+1}`).addEventListener('click',() =>{

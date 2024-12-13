@@ -44,7 +44,7 @@ document.getElementById('formulario').addEventListener('submit', function(event)
         erroresEncontrados = true;
     }
 
-
+    
 
     if(erroresEncontrados){
         mensajeError.innerHTML = warning;
