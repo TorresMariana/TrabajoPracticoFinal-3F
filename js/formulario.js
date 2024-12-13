@@ -23,8 +23,8 @@ document.getElementById('formulario').addEventListener('submit', function(event)
         console.log('Nombre no válido');
         erroresEncontrados = true;
     }
-    if(!/^[a-zA-Z]{2,50}(?: [a-zA-Z]{2,50})*$/.test(apellido.value)){
-        warning+= '*apllido no válido<br>';
+    if(!/^[a-zA-ZÀ-ÿ]{2,50}(?: [a-zA-Z]{2,50})*$/.test(apellido.value)){
+        warning+= '*apellido no válido<br>';
         console.log('Apellido no válido');
         erroresEncontrados = true;
     }
