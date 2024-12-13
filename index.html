@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Torres Mariana">
+    <meta name="description" content="Trabajo Final TECNO 3F - JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript, GitHub">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patitas En Acción</title>
+    <link rel="icon" type="icono" href="img/favicon.png">
+    <!--Exportar Bootstrap iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--Exportar css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="container">
+        <div>
+            <img class="marca" src="img/patitas-en-accion.png" alt="marca">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quienessomos">¿Quienes somos?</a></li>
+                <li><a href="#adoptar">Adoptar</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="container hero">
+        <a name="inicio"></a>
+        <div class="hero-texto">
+            <h1>Patitas en acción</h1>
+            <h2>Cada <font class="resaltar-violeta">perro</font> merece un <font class="resaltar-naranja">hogar.</font></h2>
+            <h2>Haz el cambio, <font class="resaltar-violeta">adopta.</font></h2>
+        </div>
+        
+        <div class="hero-imagen">
+            <img src="img/perro1.jpg" alt="imagen-de-perro">
+        </div>
+
+    </section>
+
+    <a name="quienessomos"></a>
+    <main>
+        <div class="main-texto">
+            <h2>¿Quiénes somos?</h2>
+            <p>Patitas en acción nace de la convicción de que cada vida merece una oportunidad. Creemos que el verdadero cambio comienza con un compromiso directo y profundo hacia los animales. Somos un grupo de personas motivadas por un mismo objetivo: ayudar a los perros sin hogar. Nos dedicamos a rescatar perros en situación de calle y riesgo de vida. Les ofrecemos un espacio seguro, donde puedan sanar, ser amados y finalmente, encontrar el hogar que siempre merecieron.</p>
+        </div>
+    
+        <div class="main-imagen">
+            <div class="curita-container">
+                <img class="curita" src="img/curita1.png" alt="">
+            </div>
+            <img src="img/perro3.jpg" alt="imagen-de-perro">
+            <!-- <img src="" alt="imagen-de-perro" id="perroMain1"> -->
+        </div>
+
+        <div class="main-texto">
+            <h2>¿Qué hacemos?</h2>
+            <p>Los animales que llegan a Patitas en acción reciben atención veterinaria completa, incluyendo esterilización, vacunación, desparacitación, identificación con microchip y cualquier tratamiento necesario para garantizar su bienestar hasta que logremos encontrarles un hogar que los cuide de por vida.</p>
+            <p>Queremos promover la sensibilización colectiva fomentando la esterilización, el respeto a la vida, el NO al maltrato animal y la adopción responsable. Aspiramos con convertirnos en una organización líder en la protección y preservación de los perros que son víctimas del maltrato y el abuso.</p>
+        </div>
+        <div class="main-imagen">
+            <div class="curita-container curita-container-2">
+                <img class="curita" src="img/curita2.png" alt="">
+            </div>
+            <img src="img/perro2.jpg" alt="imagen-de-perro">
+            <!-- <img src="" alt="imagen-de-perro" id="perroMain2"> -->
+        </div>
+
+
+    </main>
+
+    <a name="adoptar"></a>
+    <section class=" adoptar container">
+        <h2>Conoce a tu fututo mejor amigo</h2>
+        <div class="card">
+            <div class="card-imagen">
+                <img src="" alt="imagen-de-perro" id="cardImagen1">
+            </div>
+            <p id="cardNombre1">Nombre</p>
+            <p id="cardRaza1"></p>
+            <button id="cardBoton1">ADOPTAR</button>
+        </div>
+
+        <div class="card">
+            <div class="card-imagen">
+                <img src="" alt="imagen-de-perro" id="cardImagen2">
+            </div>
+            <p id="cardNombre2">Nombre</p>
+            <p id="cardRaza2"></p>
+            <button id="cardBoton2">ADOPTAR</button>
+        </div>
+
+        <div class="card">
+            <div class="card-imagen">
+                <img src="" alt="imagen-de-perro" id="cardImagen3">
+            </div>
+            <p id="cardNombre3">Nombre</p>
+            <p id="cardRaza3"></p>
+            <button id="cardBoton3">ADOPTAR</button>
+        </div>
+
+        <div class="card">
+            <div class="card-imagen">
+                <img src="" alt="imagen-de-perro" id="cardImagen4">
+            </div>
+            <p id="cardNombre4">Nombre</p>
+            <p id="cardRaza4"></p>
+            <button id="cardBoton4">ADOPTAR</button>
+        </div>
+
+        <div class="overlay" id="overlay" style="display: none;">
+            <div class="card popup">
+                <div class="card-imagen">
+                    <img src="" alt="imagen-de-perro" id="popupImagen">
+                </div>
+                <div class="card-texto">
+                    <h3>Nombre:</h3>
+                    <p id="popupNombre"></p>
+                </div>
+                <div class="card-texto">
+                    <h3>Raza:</h3>
+                    <p id="popupRaza"></p>
+                </div>
+                <button id="cerrarPopup">CERRAR</button>
+            </div>
+        </div>
+    </section>
+
+    <a name="contacto"></a>
+    <section class="container formulario">
+        <h3>Querés adoptar o sumarte como voluntario, ¡Contactanos!</h3>
+        <form action="" method="get" id="formulario">
+
+            <label for="nombre">Nombre:</label>
+            <input class="form-control" type="text" id="nombre" placeholder="Nombre">
+            
+            <label for="apellido">Apellido:</label>
+            <input class="form-control" type="text" id="apellido" placeholder="Apellido">
+
+            <label for="telefono">Teléfono:</label>
+            <input class="form-control" type="tel" id="telefono" placeholder="Teléfono">
+            
+            <label for="email">E-mail:</label>
+            <input class="form-control" type="email" id="email" placeholder="ejemplo@gmail.com" autocomplete="off">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Escriba su mensaje" row></textarea>
+            
+            <!--Botón de enviar-->
+            <button class="boton-enviar" type="submit" id="botonEnviar">Enviar</button>
+            
+            <!--mensaje de error-->
+            <div id="contenedor_mensaje_error" style="display: none;">
+                <p class="warning" id="mensajeError"></p>
+            </div>
+        </form>
+
+    </section>
+
+
+    <footer class="container">
+        <p>"Deja tu huella"</p>
+        <div class="marca-container">
+            <img class="marca" src="img/patitas-en-accion.png" alt="patitas-en-accion">
+        </div>
+
+        <div class="iconos-container">
+            <ul class="navegador-icono">
+                <li><a class="icono" href="https://twitter.com/"><i class="bi bi-twitter-x"></i></a></li>
+                <li><a class="icono" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></li>
+                <li><a class="icono" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a></li>
+                <li><a class="icono" href="https://www.tiktok.com/es/"><i class="bi bi-tiktok"></i></a></li>
+            </ul>
+        </div>
+
+        <span>Todos los derechos reservados - ©Copyright 2024</span>
+    </footer>
+
+    <script src="js/dogApp.js"></script>
+    <script src="js/formulario.js"></script>
+    
+</body>
+</html>
